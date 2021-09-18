@@ -1,0 +1,198 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border-bottom:1px solid brown; */
+  background-color: rgb(36,36,31);
+  height: 150px;
+}
+
+#main-header img {
+  height: 100px;
+}
+
+nav a {
+  padding: 0.5em 1em;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  ;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+content {
+  width: 1200px;
+  margin-top: 1em;
+  /* border: 1px solid black; */
+}
+
+#card-holder {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.car-card {
+  background-color: rgb(36,36,31);
+  color: white;
+  height: 400px;
+  width: 330px;
+  padding: 1em;
+  margin: 1em 0.5em 0em 0.5em;
+  border-radius: 10px;
+  border: 5px solid rgb(36,36,31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 5px 5px rgb(206, 206, 206);
+}
+
+.car-card img {
+  width: 300px;
+}
+
+.car-card h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.car-card h2{
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.car-card button {
+  align-self: center;
+  font-size: 24px;
+  background-color: white;
+  color: rgb(36,36,31);
+  border-radius: 5px;
+  margin-top: 15px;
+  border: none;
+}
+
+.car-card button:hover {
+  background-color: #6B172B;
+  color: white;
+  transition: all 0.3s ease;
+}
+.article-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-container img {
+  height: 300px;
+  padding-left: 3em;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: space-around;
+}
+
+h4 {
+  margin: 5px;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+
+.secure-login {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 600px;
+  box-shadow: 0 0 5px 5px gainsboro;
+}
+
+.secure-login input {
+  margin: 1em 0;
+}
